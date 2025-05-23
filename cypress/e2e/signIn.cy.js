@@ -42,7 +42,7 @@ describe('Sign In page', () => {
 
     cy.get('.fa').click();
 
-    cy.get('.button').click();
+    cy.get('a.button.secondary.radius[href="/logout"]').click();
 
     cy.get('#flash')
       .should('contain.text', 'You logged out of the secure area!');
